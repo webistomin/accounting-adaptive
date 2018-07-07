@@ -56,6 +56,7 @@
   }
 
   &__column {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +71,7 @@
     font-size: 17px;
     line-height: 21px;
     margin-bottom: 30px;
+    margin-top: 30px;
   }
 
   &__text {
@@ -81,5 +83,22 @@
     font-size: 16px;
     line-height: 21px;
     margin-bottom: 30px;
+  }
+
+  &__btn {
+    position: absolute;
+    display: block;
+    width: 105px;
+    background-color: #ff9227;
+    bottom: 0;
+    right: 0;
+    font-family: Geometria, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    color: #ffffff;
+    font-size: 17px;
+    padding: 40px 0;
+    transform: perspective(400px) rotateY(-45deg);
+    border-radius: 5px;
   }
 }
