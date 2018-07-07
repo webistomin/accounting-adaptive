@@ -124,14 +124,53 @@
   <section class="features">
     <div class="container">
       <h2 class="features__title title">Наши клиенты получают возможность</h2>
-      <ul class="features__tabs">
-        <li class="feature__tab">Избавиться от рутины</li>
-        <li class="feature__tab">Экономия</li>
-        <li class="feature__tab">Обрести спокойствие и уверенность</li>
-        <li class="feature__tab">Создать положительную репутацию</li>
+      <ul class="features__tabs tabs" data-tabs>
+        <li class="features__tab"><a data-tab href="#taba">Избавиться от рутины</a></li>
+        <li class="features__tab"><a data-tab href="#tabb">Экономия</a></li>
+        <li class="features__tab"><a data-tab href="#tabc">Обрести спокойствие и уверенность</a></li>
+        <li class="features__tab"><a data-tab href="#tabd">Создать положительную репутацию</a></li>
       </ul>
-      <div class="features__inner">
-        <div class="features__feature">
+      <div class="features__inner" data-tabs-content>
+        <div class="features__feature tabs-pane active" data-tabs-pane id="taba">
+          <div class="features__column">
+            <img src="img/tab.png" alt="" class="features__img">
+            <a href="" class="features__btn btn">Узнать больше</a>
+          </div>
+          <div class="features__column">
+            <strong class="features__desc">Услуги по бухгалтерскому сопровождению и обслуживанию ООО и ИП в Москве позволяют существенно сэкономить. </strong>
+            <p class="features__text">Если речь идет о частичном аутсорсинге, то ваша экономия заключается в том, что вам не придется увеличивать количество бухгалтеров. И в том и в другом случае вы экономите на налогах. Во-первых, мы найдем законный способ их сократить. Во-вторых, услуги «Консалты» – это расходы, а не зарплата. То есть они не подлежат налогообложению.
+            </p>
+            <p class="features__text">И еще один важный момент: стоимость наших услуг как минимум на 5% ниже, чем у конкурентов
+            </p>
+          </div>
+        </div>
+        <div class="features__feature tabs-pane" data-tabs-pane id="tabb">
+          <div class="features__column">
+            <img src="" alt="" class="features__img">
+            <a href="" class="features__btn btn">Узнать больше</a>
+          </div>
+          <div class="features__column">
+            <strong class="features__desc">Услуги по бухгалтерскому сопровождению и обслуживанию ООО и ИП в Москве позволяют существенно сэкономить. </strong>
+            <p class="features__text">Если речь идет о частичном аутсорсинге, то ваша экономия заключается в том, что вам не придется увеличивать количество бухгалтеров. И в том и в другом случае вы экономите на налогах. Во-первых, мы найдем законный способ их сократить. Во-вторых, услуги «Консалты» – это расходы, а не зарплата. То есть они не подлежат налогообложению.
+            </p>
+            <p class="features__text">И еще один важный момент: стоимость наших услуг как минимум на 5% ниже, чем у конкурентов
+            </p>
+          </div>
+        </div>
+        <div class="features__feature tabs-pane" data-tabs-pane id="tabc">
+          <div class="features__column">
+            <img src="" alt="" class="features__img">
+            <a href="" class="features__btn btn">Узнать больше</a>
+          </div>
+          <div class="features__column">
+            <strong class="features__desc">Услуги по бухгалтерскому сопровождению и обслуживанию ООО и ИП в Москве позволяют существенно сэкономить. </strong>
+            <p class="features__text">Если речь идет о частичном аутсорсинге, то ваша экономия заключается в том, что вам не придется увеличивать количество бухгалтеров. И в том и в другом случае вы экономите на налогах. Во-первых, мы найдем законный способ их сократить. Во-вторых, услуги «Консалты» – это расходы, а не зарплата. То есть они не подлежат налогообложению.
+            </p>
+            <p class="features__text">И еще один важный момент: стоимость наших услуг как минимум на 5% ниже, чем у конкурентов
+            </p>
+          </div>
+        </div>
+        <div class="features__feature tabs-pane" data-tabs-pane id="tabd">
           <div class="features__column">
             <img src="" alt="" class="features__img">
             <a href="" class="features__btn btn">Узнать больше</a>
@@ -302,6 +341,9 @@
   // NOTE:
   // prior to v2.0.2, options "container", "controlsContainer", "navContainer" and "autoplayButton" still need to be DOM elements.
   // e.g. container: document.querySelector('.my-slider'),
+</script>
+<script>
+  tabby.init();
 </script>
 </body>
 </html>
