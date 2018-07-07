@@ -87,6 +87,8 @@
   }
 
   &__item {
+    width: 272px;
+    margin: 0 auto;
     min-height: 410px;
     background-size: cover;
     border-radius: 5px;
@@ -146,6 +148,19 @@
       width: 18px;
       height: 18px;
       background-image: url("../img/icon-clock.png");
+    }
+  }
+
+  @media @screen-sm {
+    &__list {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &__item {
+      &:last-child {
+        margin-bottom: 20px;
+      }
     }
   }
 }

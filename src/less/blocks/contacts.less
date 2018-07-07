@@ -57,8 +57,6 @@
     position: relative;
 
 
-
-
     &::before {
       display: none;
       content: "";
@@ -82,6 +80,22 @@
         height: 67px;
         background-image: url("../img/icon-mail.png");
         left: -93px;
+      }
+    }
+  }
+
+  @media @screen-sm {
+    &__item {
+      margin-bottom: 60px;
+
+      &::before {
+        display: block;
+      }
+
+      &:last-child {
+        &::before {
+          display: block;
+        }
       }
     }
   }
