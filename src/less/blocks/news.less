@@ -163,4 +163,37 @@
       }
     }
   }
+
+  @media @screen-lg {
+    &__tabs {
+      flex-direction: row;
+      justify-content: center;
+    }
+
+    &__tab {
+      border-top: 1px solid #e1eafd;
+
+      & a {
+        padding: 12px 30px;
+      }
+    }
+
+    &__feature {
+      flex-direction: row;
+    }
+
+    &__column {
+      text-align: left;
+
+      &:first-child {
+        width: 430px;
+        flex-shrink: 0;
+        margin-right: 40px;
+      }
+    }
+
+    &__text {
+      text-align: left;
+    }
+  }
 }

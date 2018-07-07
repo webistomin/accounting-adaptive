@@ -99,4 +99,30 @@
       }
     }
   }
+
+  @media @screen-lg {
+    &__list {
+      margin-top: 60px;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__item {
+      margin: 0;
+
+      &::before {
+        left: -100px;
+      }
+
+      &:first-child {
+        margin-right: 200px;
+      }
+
+      &:last-child {
+        &::before {
+          left: -110px;
+        }
+      }
+    }
+  }
 }

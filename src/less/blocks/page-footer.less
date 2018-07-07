@@ -64,4 +64,67 @@
     font-weight: normal;
     font-style: normal;
   }
+
+  @media @screen-lg {
+    &__inner {
+      justify-content: flex-start;
+      align-items: baseline;
+      flex-direction: row;
+    }
+
+    &__logotype {
+      margin-right: 50px;
+    }
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      &--margin {
+        margin-left: auto;
+      }
+    }
+
+    &__link {
+      padding: 15px;
+      width: auto;
+
+      &:hover {
+        background-color: transparent;
+        color: initial;
+      }
+
+      &--phone {
+        position: relative;
+        color: #000000;
+
+        &::before {
+          position: absolute;
+          content: "";
+          width: 21px;
+          height: 36px;
+          background-image: url("../img/icon-phone.png");
+          left: -15px;
+          top: 50%;
+          transform: translateY(-50%);
+        }
+      }
+
+      &--border {
+        border: 1px solid #ff9227;
+        border-radius: 5px;
+        color: #ff9227;
+        position: relative;
+
+        &:hover {
+          background-color: #ff9227;
+          color: #ffffff;
+        }
+      }
+
+
+    }
+
+  }
 }
