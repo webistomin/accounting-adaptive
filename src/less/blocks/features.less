@@ -88,7 +88,7 @@
   &__btn {
     position: absolute;
     display: block;
-    width: 105px;
+    width: 140px;
     background-color: #ff9227;
     bottom: 0;
     right: 0;
@@ -98,7 +98,14 @@
     color: #ffffff;
     font-size: 17px;
     padding: 40px 0;
-    transform: perspective(400px) rotateY(-45deg);
+    transform: perspective(400px) rotateY(-45deg) translate3d(0,0,0);
     border-radius: 5px;
+    transition: all 0.45s ease-in-out;
+
+    &:hover {
+      transform: none;
+      transition: all 0.45s ease-in-out;
+
+    }
   }
 }
