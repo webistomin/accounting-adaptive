@@ -1,0 +1,36 @@
+.main-nav {
+  position: absolute;
+  left: 0;
+  top: 66px;
+  width: 100%;
+  box-sizing: border-box;
+
+  &--closed {
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &--opened {
+    transform-origin: top;
+    transform: scaleY(1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  &__link {
+    padding: 20px 0;
+    display: block;
+    width: 100%;
+    text-align: center;
+    background-color: #ffffff;
+    color: #598cf5;
+    font-family: Geometria, sans-serif;
+    font-style: normal;
+    font-weight: 500;
+
+    &:hover {
+      color: #ffffff;
+      background-color: #598cf5;
+    }
+  }
+}

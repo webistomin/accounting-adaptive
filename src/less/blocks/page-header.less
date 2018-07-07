@@ -1,0 +1,99 @@
+.page-header {
+  position: relative;
+
+  &__inner {
+    padding-top: 20px;
+    padding-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__logotype {
+    margin: 0;
+    font-family: Geometria, sans-serif;
+    font-size: 24px;
+    font-weight: normal;
+    font-style: normal;
+    color: #000000;
+    position: relative;
+    padding-left: 40px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #e7e7e7;
+      top: 50%;
+      left: 0px;
+      transform: translateY(-50%);
+    }
+  }
+
+  &__toggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40px;
+    height: 20px;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    position: relative;
+    -webkit-transition: 0.25s ease-in-out;
+    -moz-transition: 0.25s ease-in-out;
+    -o-transition: 0.25s ease-in-out;
+    transition: 0.25s ease-in-out;
+    outline: none;
+
+    & span {
+      position: absolute;
+      display: block;
+      width: inherit;
+      height: 2px;
+      background-color: #000000;
+      -webkit-transition: 0.25s ease-in-out;
+      -moz-transition: 0.25s ease-in-out;
+      -o-transition: 0.25s ease-in-out;
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+      }
+
+      &:nth-child(3) {
+        top: 17px;
+      }
+    }
+
+    &--opened span {
+      &:nth-child(1) {
+        top: 7px;
+        -webkit-transform: rotate(135deg);
+        -moz-transform: rotate(135deg);
+        -o-transform: rotate(135deg);
+        transform: rotate(135deg);
+        background-color: #598cf5;
+      }
+
+      &:nth-child(2) {
+        opacity: 0;
+      }
+
+      &:nth-child(3) {
+        top: 7px;
+        -webkit-transform: rotate(-135deg);
+        -moz-transform: rotate(-135deg);
+        -o-transform: rotate(-135deg);
+        transform: rotate(-135deg);
+        background-color: #598cf5;
+      }
+    }
+  }
+}
