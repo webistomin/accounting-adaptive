@@ -272,29 +272,83 @@
   <section class="news">
     <div class="container">
       <h2 class="news__title title">Публикации</h2>
-      <ul class="news__tabs">
-        <li class="news__tab">Все</li>
-        <li class="news__tab">Новости</li>
-        <li class="news__tab">События</li>
-        <li class="news__tab">Акции</li>
+      <ul class="news__tabs tabs" data-tabs>
+        <li class="news__tab"><a href="#tab-all" data-tab>Все</a></li>
+        <li class="news__tab active"><a href="#tab-news" data-tab>Новости</a></li>
+        <li class="news__tab"><a href="#tab-events" data-tab>События</a></li>
+        <li class="news__tab"><a href="#tab-shares" data-tab>Акции</a></li>
       </ul>
-      <div class="news__posts">
-        <ul class="news__list">
+      <div class="news__posts" data-tabs-content>
+        <ul class="news__list tabs-pane active" data-tabs-pane id="tab-all">
           <li class="news__item">
-            <h3 class="news__title"></h3>
-            <time class="news__date"></time>
+            <h3 class="news__title">Вкладка все</h3>
+            <time class="news__date">11:23 12.05.15</time>
           </li>
           <li class="news__item">
-            <h3 class="news__title"></h3>
-            <time class="news__date"></time>
+            <h3 class="news__title">Вкладка все</h3>
+            <time class="news__date">11:23 12.05.15</time>
           </li>
           <li class="news__item">
-            <h3 class="news__title"></h3>
-            <time class="news__date"></time>
+            <h3 class="news__title">Вкладка все</h3>
+            <time class="news__date">11:23 12.05.15</time>
           </li>
           <li class="news__item">
-            <h3 class="news__title"></h3>
-            <time class="news__date"></time>
+            <h3 class="news__title">Вкладка все</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+        </ul>
+        <ul class="news__list tabs-pane " data-tabs-pane id="tab-news">
+          <li class="news__item">
+            <h3 class="news__title">Вкладка новости</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка новости</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка новости</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка новости</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+        </ul>
+        <ul class="news__list tabs-pane " data-tabs-pane id="tab-events">
+          <li class="news__item">
+            <h3 class="news__title">Вкладка события</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка события</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка события</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка события</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+        </ul>
+        <ul class="news__list tabs-pane" data-tabs-pane id="tab-shares">
+          <li class="news__item">
+            <h3 class="news__title">Вкладка акции</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка акции</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка акции</h3>
+            <time class="news__date">11:23 12.05.15</time>
+          </li>
+          <li class="news__item">
+            <h3 class="news__title">Вкладка акции</h3>
+            <time class="news__date">11:23 12.05.15</time>
           </li>
         </ul>
       </div>
