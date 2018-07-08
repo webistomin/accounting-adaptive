@@ -24,7 +24,6 @@
 </table>
 
 ---
-<img src="mockup/mockup.png">
 
 ## _Не удаляйте и не обращайте внимание на файлы:_
 *	### `.editorconfig`
@@ -33,3 +32,5 @@
 *	### `package.json`
 *	### `.csscomb.json`
 ---
+
+<img src="mockup/mockup.png">
