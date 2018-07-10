@@ -1,4 +1,4 @@
-# Личный проект «Accounting»
+# Личный проект «Бухгалтерия»
 
 <table>
   <thead>
@@ -32,5 +32,6 @@
 *	### `package.json`
 *	### `.csscomb.json`
 ---
-
+<img src="mockup/google.png">
+<img src="mockup/lighthouse.png">
 <img src="mockup/mockup.png">
